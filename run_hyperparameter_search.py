@@ -16,7 +16,8 @@ def main():
     print("="*60)
     
     # 檢查數據集
-    dataset_path = "src/dataset/acp740.txt"
+    # dataset_path = "src/dataset/acp740.txt"
+    dataset_path = "src/dataset/acp20.txt"
     if not os.path.exists(dataset_path):
         print(f"錯誤: 找不到數據集文件 {dataset_path}")
         return False
@@ -40,13 +41,13 @@ def main():
         "--dataset", dataset_path,
         # "--search_method", "halving",
         "--search_method", "manual",  # 使用手動搜尋以便於測試
-        # "--kernel_method", "linear",
-        "--kernel_method", "rbf",  # 使用 RBF 核方法
+        "--kernel_method", "linear",
+        # "--kernel_method", "rbf",  # 使用 RBF 核方法
         "--cv_folds", "5",
-        "--gamma_min", "3.3",
+        "--gamma_min", "2.5",
         "--gamma_max", "3.5",
-        "--C_min", "2.3",
-        "--C_max", "2.5",
+        "--C_min", "3.0",
+        "--C_max", "4.0",
         "--n_gamma", "10",
         "--n_C", "10"
     ]

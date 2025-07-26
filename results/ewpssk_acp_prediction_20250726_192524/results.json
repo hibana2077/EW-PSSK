@@ -1,0 +1,158 @@
+{
+  "experiment_info": {
+    "timestamp": "2025-07-26T19:25:23.913527",
+    "dataset_path": "src/dataset/acp20.txt",
+    "experiment_type": "cross_validation"
+  },
+  "model_params": {
+    "gamma": 2.6941,
+    "C": 3.5199,
+    "kernel_method": "linear",
+    "cv_folds": 5,
+    "max_length": 50,
+    "random_state": 42
+  },
+  "dataset_info": {
+    "total_samples": 240,
+    "positive_samples": 129,
+    "negative_samples": 111,
+    "min_length": 50,
+    "max_length": 50,
+    "avg_length": 50.0,
+    "std_length": 0.0,
+    "positive_ratio": 0.5375
+  },
+  "cv_results": {
+    "fold_results": [
+      {
+        "Accuracy": 0.8541666666666666,
+        "Precision": 0.88,
+        "Recall": 0.8461538461538461,
+        "Sn": 0.8461538461538461,
+        "Sp": 0.8636363636363636,
+        "F1": 0.8627450980392157,
+        "MCC": 0.7079361616697484,
+        "TP": 22,
+        "TN": 19,
+        "FP": 3,
+        "FN": 4,
+        "AUC": 0.9440559440559441
+      },
+      {
+        "Accuracy": 0.8333333333333334,
+        "Precision": 0.875,
+        "Recall": 0.8076923076923077,
+        "Sn": 0.8076923076923077,
+        "Sp": 0.8636363636363636,
+        "F1": 0.84,
+        "MCC": 0.6689936080056726,
+        "TP": 21,
+        "TN": 19,
+        "FP": 3,
+        "FN": 5,
+        "AUC": 0.9125874125874126
+      },
+      {
+        "Accuracy": 0.8541666666666666,
+        "Precision": 0.88,
+        "Recall": 0.8461538461538461,
+        "Sn": 0.8461538461538461,
+        "Sp": 0.8636363636363636,
+        "F1": 0.8627450980392157,
+        "MCC": 0.7079361616697484,
+        "TP": 22,
+        "TN": 19,
+        "FP": 3,
+        "FN": 4,
+        "AUC": 0.9178321678321678
+      },
+      {
+        "Accuracy": 0.7916666666666666,
+        "Precision": 0.8333333333333334,
+        "Recall": 0.7692307692307693,
+        "Sn": 0.7692307692307693,
+        "Sp": 0.8181818181818182,
+        "F1": 0.8,
+        "MCC": 0.5853694070049635,
+        "TP": 20,
+        "TN": 18,
+        "FP": 4,
+        "FN": 6,
+        "AUC": 0.8548951048951048
+      },
+      {
+        "Accuracy": 0.875,
+        "Precision": 0.8518518518518519,
+        "Recall": 0.92,
+        "Sn": 0.92,
+        "Sp": 0.8260869565217391,
+        "F1": 0.8846153846153846,
+        "MCC": 0.7513319206146093,
+        "TP": 23,
+        "TN": 19,
+        "FP": 4,
+        "FN": 2,
+        "AUC": 0.888695652173913
+      }
+    ],
+    "average_results": {
+      "Accuracy_mean": 0.8416666666666666,
+      "Sn_mean": 0.8378461538461538,
+      "Sp_mean": 0.8470355731225296,
+      "F1_mean": 0.8500211161387632,
+      "MCC_mean": 0.6843134517929486,
+      "AUC_mean": 0.9036132563089085
+    },
+    "std_results": {
+      "Accuracy_std": 0.028259708263021956,
+      "Sn_std": 0.05000922991731703,
+      "Sp_std": 0.02048483560450582,
+      "F1_std": 0.028716189408321085,
+      "MCC_std": 0.05591450906467863,
+      "AUC_std": 0.030047685795509285
+    },
+    "total_time": 0.14995384216308594,
+    "avg_fold_time": 0.029678869247436523,
+    "cv_folds": 5
+  },
+  "weights_info": {
+    "min_weight": 0.0013584216160911855,
+    "max_weight": 0.40040640455468374,
+    "mean_weight": 0.05504551819995733,
+    "std_weight": 0.06662095373185851,
+    "min_entropy": 2.283772030989843,
+    "max_entropy": 2.90946708804757,
+    "mean_entropy": 2.6900938458360075,
+    "gamma": 2.6941,
+    "sequence_length": 50
+  },
+  "performance": {
+    "wall_time": 0.17354631423950195,
+    "cpu_time": 0.1875,
+    "cpu_usage_percent": 108.04032388797455,
+    "start_memory_mb": 155.51953125,
+    "end_memory_mb": 163.24609375,
+    "peak_memory_mb": 162.6875,
+    "memory_increase_mb": 7.7265625,
+    "peak_memory_increase_mb": 7.16796875
+  },
+  "system_info": {
+    "cpu_info": {
+      "cpu_count": 12,
+      "cpu_freq": {
+        "current": 2592.0,
+        "min": 0.0,
+        "max": 2592.0
+      },
+      "cpu_percent": 4.6
+    },
+    "memory_info": {
+      "total": 65373.48046875,
+      "available": 37195.6171875,
+      "percent": 4.1103363037109376e-05,
+      "used": 28177.86328125,
+      "free": 37195.6171875
+    },
+    "python_process_id": 38792
+  }
+}

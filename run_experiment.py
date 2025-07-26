@@ -14,7 +14,8 @@ def main():
     print("="*50)
     
     # 檢查數據集
-    dataset_path = "src/dataset/acp740.txt"
+    # dataset_path = "src/dataset/acp740.txt"
+    dataset_path = "src/dataset/acp20.txt"
     if not os.path.exists(dataset_path):
         print(f"錯誤: 找不到數據集文件 {dataset_path}")
         return False
@@ -23,11 +24,18 @@ def main():
     cmd = [
         sys.executable, "main.py",
         "--dataset", dataset_path,
-        "--gamma", "3.4772",
-        "--C", "2.5000",
+        # RBF + ACP740
+        # "--gamma", "3.4772",
+        # "--C", "2.5000",
+        # Linear + ACP740
+        # "--gamma", "1.4835",
+        # "--C", "0.5196",
+        # Linear + ACP20
+        "--gamma", "2.6941",
+        "--C", "3.5199",
         "--cv_folds", "5",
-        # "--kernel_method", "linear",
-        "--kernel_method", "precomputed",
+        "--kernel_method", "linear",
+        # "--kernel_method", "precomputed",
         # "--kernel_method", "rbf",
         "--max_length", "50",
         "--random_state", "42"
