@@ -24,7 +24,7 @@ def main():
                        choices=['halving', 'manual'],
                        help='搜尋方法 (halving: HalvingGridSearchCV, manual: 手動網格搜尋)')
     parser.add_argument('--kernel_method', type=str, default='linear',
-                       choices=['linear', 'precomputed'],
+                       choices=['linear', 'precomputed', 'rbf'],
                        help='核方法類型')
     parser.add_argument('--cv_folds', type=int, default=5,
                        help='交叉驗證折數')

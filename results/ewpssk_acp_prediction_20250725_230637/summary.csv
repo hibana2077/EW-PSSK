@@ -1,0 +1,14 @@
+Category,Metric,Value
+Dataset,Total Samples,740
+Dataset,Positive Samples,376
+Dataset,Negative Samples,364
+Dataset,Positive Ratio,0.5081
+CV Results,Accuracy,0.8324 ± 0.0332
+CV Results,Sn,0.8566 ± 0.0380
+CV Results,Sp,0.8076 ± 0.0309
+CV Results,F1,0.8385 ± 0.0322
+CV Results,MCC,0.6654 ± 0.0668
+CV Results,AUC,0.9067 ± 0.0291
+Performance,Total Time (s),0.0000
+Performance,Peak Memory (MB),161.73
+Performance,CPU Time (s),12.4062

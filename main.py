@@ -34,7 +34,7 @@ def main():
     parser.add_argument('--cv_folds', type=int, default=10,
                        help='交叉驗證折數')
     parser.add_argument('--kernel_method', type=str, default='linear',
-                       choices=['linear', 'precomputed'],
+                       choices=['linear', 'precomputed', 'rbf'],
                        help='核方法類型')
     parser.add_argument('--max_length', type=int, default=50,
                        help='序列最大長度')

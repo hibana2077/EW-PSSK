@@ -45,6 +45,10 @@ class EWPSSKClassifier:
             self.classifier = SVC(
                 kernel='precomputed', C=C, probability=True, random_state=random_state
             )
+        elif kernel_method == 'rbf':
+            self.classifier = SVC(
+                kernel='rbf', C=C, gamma=gamma, probability=True, random_state=random_state
+            )
         else:
             raise ValueError(f"不支持的核方法: {kernel_method}")
         
@@ -75,6 +79,8 @@ class EWPSSKClassifier:
         
         # 根據核方法準備特徵
         if self.kernel_method == 'linear':
+            X = self.ewpssk.transform(sequences)
+        elif self.kernel_method == 'rbf':
             X = self.ewpssk.transform(sequences)
         else:  # precomputed
             X = self.ewpssk.compute_kernel_matrix(sequences)
@@ -108,6 +114,8 @@ class EWPSSKClassifier:
         
         if self.kernel_method == 'linear':
             X = self.ewpssk.transform(sequences)
+        elif self.kernel_method == 'rbf':
+            X = self.ewpssk.transform(sequences)
         else:  # precomputed
             # 計算測試序列與訓練序列之間的核矩陣
             if self.train_sequences is None:
@@ -130,6 +138,8 @@ class EWPSSKClassifier:
             raise ValueError("模型尚未訓練")
         
         if self.kernel_method == 'linear':
+            X = self.ewpssk.transform(sequences)
+        elif self.kernel_method == 'rbf':
             X = self.ewpssk.transform(sequences)
         else:  # precomputed
             # 計算測試序列與訓練序列之間的核矩陣

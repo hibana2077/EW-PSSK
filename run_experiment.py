@@ -23,11 +23,12 @@ def main():
     cmd = [
         sys.executable, "main.py",
         "--dataset", dataset_path,
-        "--gamma", "1.4591",
-        "--C", "0.5273",
-        "--cv_folds", "10",
-        "--kernel_method", "linear",
-        # "--kernel_method", "precomputed",
+        "--gamma", "3.4772",
+        "--C", "2.5000",
+        "--cv_folds", "5",
+        # "--kernel_method", "linear",
+        "--kernel_method", "precomputed",
+        # "--kernel_method", "rbf",
         "--max_length", "50",
         "--random_state", "42"
     ]

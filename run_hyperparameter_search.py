@@ -40,14 +40,15 @@ def main():
         "--dataset", dataset_path,
         # "--search_method", "halving",
         "--search_method", "manual",  # 使用手動搜尋以便於測試
-        "--kernel_method", "linear",
+        # "--kernel_method", "linear",
+        "--kernel_method", "rbf",  # 使用 RBF 核方法
         "--cv_folds", "5",
-        "--gamma_min", "0.1",
-        "--gamma_max", "2.0",
-        "--C_min", "0.2",
-        "--C_max", "2.0",
-        "--n_gamma", "20",
-        "--n_C", "20"
+        "--gamma_min", "3.3",
+        "--gamma_max", "3.5",
+        "--C_min", "2.3",
+        "--C_max", "2.5",
+        "--n_gamma", "10",
+        "--n_C", "10"
     ]
     
     print("執行命令:", " ".join(cmd))

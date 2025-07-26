@@ -4,5 +4,5 @@ Dataset,Positive Samples,376
 Dataset,Negative Samples,364
 Dataset,Positive Ratio,0.5081
 Performance,Total Time (s),0.0000
-Performance,Peak Memory (MB),298.98
-Performance,CPU Time (s),110.5469
+Performance,Peak Memory (MB),166.64
+Performance,CPU Time (s),190.8750
