@@ -10,5 +10,5 @@ CV Results,F1,0.8133 ± 0.0181
 CV Results,MCC,0.6319 ± 0.0308
 CV Results,AUC,0.8836 ± 0.0303
 Performance,Total Time (s),0.0000
-Performance,Peak Memory (MB),168.02
-Performance,CPU Time (s),0.0781
+Performance,Peak Memory (MB),168.43
+Performance,CPU Time (s),0.1250

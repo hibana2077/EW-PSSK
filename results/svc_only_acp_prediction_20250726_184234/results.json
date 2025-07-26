@@ -1,7 +1,7 @@
 {
   "experiment_info": {
-    "name": "svc_only_acp_prediction_20250725_232646",
-    "timestamp": "2025-07-25T23:26:46.121041",
+    "name": "svc_only_acp_prediction_20250726_184234",
+    "timestamp": "2025-07-26T18:42:34.396481",
     "method": "SVC_only",
     "dataset": "src/dataset/acp740.txt"
   },
@@ -115,13 +115,13 @@
     }
   },
   "performance": {
-    "wall_time": 3.481485605239868,
-    "cpu_time": 0.078125,
-    "cpu_usage_percent": 2.244013299449427,
-    "start_memory_mb": 155.21875,
-    "end_memory_mb": 168.02734375,
-    "peak_memory_mb": 168.0234375,
-    "memory_increase_mb": 12.80859375,
-    "peak_memory_increase_mb": 12.8046875
+    "wall_time": 2.6653354167938232,
+    "cpu_time": 0.125,
+    "cpu_usage_percent": 4.6898412564661225,
+    "start_memory_mb": 155.58984375,
+    "end_memory_mb": 168.43359375,
+    "peak_memory_mb": 168.4296875,
+    "memory_increase_mb": 12.84375,
+    "peak_memory_increase_mb": 12.83984375
   }
 }
